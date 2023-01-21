@@ -1,0 +1,58 @@
+.block-title {
+  display: flex;
+  align-items: center;
+
+  .mat-icon {
+    margin: 0 1rem;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: 600;
+  }
+}
+
+.boards-container {
+  display: flex;
+  margin: 1rem .5rem;
+}
+
+.board {
+  width: 180px;
+  height: 100px;
+  border-radius: 6px;
+  margin: 0 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.create-board {
+  background-color: #EAEAEAFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & p {
+    color: gray;
+    margin: 0;
+  }
+}
+
+.workspace {
+  margin: 2rem 2rem 5rem 2rem;
+
+  & h3 {
+    font-weight: 600;
+  }
+  .workspace-header {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+  }
+
+  .workspace-actions {
+    display: flex;
+    & button {
+      margin: 0 .5rem;
+    }
+  }
+}

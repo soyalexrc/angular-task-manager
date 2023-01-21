@@ -1,0 +1,46 @@
+<div>
+  <div>
+    <div class="block-title">
+      <mat-icon>access_time</mat-icon>
+      <h2>Recently viewed</h2>
+    </div>
+    <div class="boards-container" style="margin: 2.5rem">
+      <div class="board" [ngStyle]="{'background-color': board.color}" *ngFor="let board of recentlyViewed">
+        {{board.title}}
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="block-title">
+      <mat-icon>person_outline</mat-icon>
+      <h2>Your workspaces</h2>
+    </div>
+    <div>
+      <div class="workspace" *ngFor="let workspace of workspaces">
+        <div class="workspace-header">
+          <h3>{{workspace.title}}</h3>
+          <div class="workspace-actions">
+            <button color="primary" mat-flat-button>Buttons</button>
+            <button color="primary" mat-flat-button>Buttons</button>
+            <button color="primary" mat-flat-button>Buttons</button>
+            <button color="primary" mat-flat-button>Buttons</button>
+          </div>
+        </div>
+
+        <div class="boards-container">
+          <div class="board" [ngStyle]="{'background-color': workspaceBoard.color}" *ngFor="let workspaceBoard of workspace.boards">
+            {{workspaceBoard.title}}
+          </div>
+          <div class="board create-board">
+            <p>Create new Board</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="block-title">
+    <mat-icon>people_outline</mat-icon>
+    <h2>Guest workspaces</h2>
+  </div>
+</div>

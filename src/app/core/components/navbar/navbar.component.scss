@@ -1,0 +1,18 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 11;
+  position: sticky;
+  top: 0;
+
+  button {
+    margin: 0 .5rem;
+  }
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+}
+
